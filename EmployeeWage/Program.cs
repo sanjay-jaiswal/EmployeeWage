@@ -7,8 +7,12 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("---Welcome to Employee wage Program---");
-            UC8_ComputeEmpWageForMultipleCompanies.computeEmpWage2("DMart",20,2,10);
-            UC8_ComputeEmpWageForMultipleCompanies.computeEmpWage2("Reliance", 10, 4, 20);
+            EmpWageBuilderObject dMart = new EmpWageBuilderObject("DMart", 20, 2, 10);
+            EmpWageBuilderObject reliance = new EmpWageBuilderObject("Reliance", 10, 4, 20);
+            dMart.computeEmpwage();
+            Console.WriteLine(dMart.toString());
+            reliance.computeEmpwage();
+            Console.WriteLine(reliance.toString());
         }
     }
 }

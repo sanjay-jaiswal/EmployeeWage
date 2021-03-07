@@ -4,12 +4,26 @@ using System.Text;
 
 namespace EmployeeWage
 {
-    /*
-    class UC8_ComputeEmpWageForMultipleCompanies
+    public class EmpWageBuilderObject
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-        public static int computeEmpWage2(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+
+        private string company;
+        private int empRatePerHour;
+        private int numOfWorkingDays;
+        private int maxHoursPerMonth;
+        private int totalEmpWage;
+
+        public EmpWageBuilderObject(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+        {
+            this.company = company;
+            this.empRatePerHour = empRatePerHour;
+            this.numOfWorkingDays = numOfWorkingDays;
+            this.maxHoursPerMonth = maxHoursPerMonth;
+        }
+
+        public void computeEmpwage()
         {
             int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
             while (totalEmpHrs <= maxHoursPerMonth && totalWorkingDays < numOfWorkingDays)
@@ -32,12 +46,12 @@ namespace EmployeeWage
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Days is : " + totalWorkingDays + " " + "Employee Hours is :" + empHrs);
             }
-            int totalEmpWage = totalEmpHrs * empRatePerHour;
-            Console.WriteLine("Total employee wage for companies : " + company + " is " + totalEmpWage);
-            return totalEmpWage;
+            totalEmpWage = totalEmpHrs * empRatePerHour;
+            Console.WriteLine("Total employee wage for company : " + company + " is : " + totalEmpWage);
+        }
+        public string toString()
+        {
+            return "Total Emp Wage for company : " + this.company + " is :" + this.totalEmpWage;
         }
     }
-
-    */
 }
-

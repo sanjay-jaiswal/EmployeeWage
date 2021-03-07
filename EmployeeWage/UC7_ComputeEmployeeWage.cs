@@ -4,6 +4,8 @@ using System.Text;
 
 namespace EmployeeWage
 {
+    /*
+    
     class UC7_ComputeEmployeeWage
     {
         //Constants declaration
@@ -44,4 +46,6 @@ namespace EmployeeWage
             return totalEmpWage;
         }
     }
+
+    */
 }
