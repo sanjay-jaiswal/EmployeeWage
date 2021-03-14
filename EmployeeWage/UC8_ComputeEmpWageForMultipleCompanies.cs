@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*
 namespace EmployeeWage
 {
-    /*
+    
     class UC8_ComputeEmpWageForMultipleCompanies
     {
         public const int IS_PART_TIME = 1;
@@ -37,7 +38,7 @@ namespace EmployeeWage
             return totalEmpWage;
         }
     }
-
-    */
 }
+
+*/
 

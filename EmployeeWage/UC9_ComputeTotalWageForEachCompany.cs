@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*
 namespace EmployeeWage
 {
+    
     public class EmpWageBuilderObject
     {
         public const int IS_PART_TIME = 1;
@@ -55,3 +57,5 @@ namespace EmployeeWage
         }
     }
 }
+
+*/

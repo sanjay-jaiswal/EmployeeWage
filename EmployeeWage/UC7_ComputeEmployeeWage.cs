@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*
 namespace EmployeeWage
 {
     /*
@@ -46,6 +47,6 @@ namespace EmployeeWage
             return totalEmpWage;
         }
     }
-
-    */
 }
+
+*/
