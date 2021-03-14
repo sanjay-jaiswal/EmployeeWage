@@ -9,7 +9,7 @@ namespace EmployeeWage
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
 
-        //Linked list for emp wage and store total wage in dictionary
+        //Store emp wage along with total wage
         LinkedList<CompanyEmpWage> companyEmpWageList;
         Dictionary<string, CompanyEmpWage> companyToEmpWageMap;
 
@@ -61,6 +61,10 @@ namespace EmployeeWage
                 Console.WriteLine("Day=" + totalWorkingDays + " Emplyee hours=" + empHrs);
             }
             return totalEmployeeHour * companyEmpWage.empRatePerHour;
+        }
+        public int getTotalWage(string company)
+        {
+            return this.companyToEmpWageMap[company].totalEmpWages;
         }
     }
 }
